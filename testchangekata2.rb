@@ -20,6 +20,8 @@ class MakeChange <Minitest::Test
 		assert_equal({"quarters" => 0, "dimes" => 0, "nickels" => 1, "pennies" => 0}, change_made(5))
 	end
 
-
+	def test_that_change_equal_to_six
+		assert_equal({"quarters" => 0, "dimes" => 0, "nickels" => 1, "pennies" => 1}, change_made(6))
+	end
 
 end
