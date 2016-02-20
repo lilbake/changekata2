@@ -1,8 +1,14 @@
 def change_made(amount)
 	result = {"quarters" => 0, "dimes" => 0, "nickels" => 0, "pennies" => 0}
+	quarters = 25
 	dimes = 10
 	nickels = 5
 	pennies = 1
+
+	while amount >= quarters
+		result["quarters"] = result["quarters"] + 1
+		amount = amount - quarters
+	end
 
 	while amount >= dimes
 		result["dimes"] = result["dimes"] + 1
