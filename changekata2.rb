@@ -15,7 +15,7 @@ def change_made(amount)
 		amount = amount - dimes
 	end
 
-	if amount >= nickels
+	while amount >= nickels
 		result["nickels"] = result["nickels"] + 1
 		amount = amount - nickels
 	end
