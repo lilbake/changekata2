@@ -3,6 +3,9 @@ def change_made(amount)
 	
 	 if amount >= 10
 	 	coins["dimes"] = 1
+	 	amount = amount - 10
+	 	coins["pennies"] = amount
+
 
 	elsif amount >= 5
 		coins["nickels"] = 1
