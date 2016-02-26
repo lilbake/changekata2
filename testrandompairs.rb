@@ -18,6 +18,7 @@ class RandomPairs <Minitest::Test
 		array_of_pairs = create_random_pairs(["jennifer", "shane", "meg", "aaron"])
 		assert_equal(2, array_of_pairs.count)
 		assert_equal(2, array_of_pairs[0].count)
+		assert_equal(2, array_of_pairs[1].count)
 	end
 
 
