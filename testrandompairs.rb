@@ -5,7 +5,7 @@ require_relative "randompairs.rb"
 class RandomPairs <Minitest::Test
 
 	def test_no_student_gives_us_empty_array
-		assert_equal([], create_random_pairs([]))
+		assert_equal([[]], create_random_pairs([]))
 	end
 
 	def test_with_two_students_equal_one_pair
